@@ -1,0 +1,185 @@
+.index {
+  min-height: calc(100vh - env(safe-area-inset-bottom));
+  overflow: hidden;
+  padding-top: 198rpx;
+  padding-bottom: calc(0 + env(safe-area-inset-bottom));
+}
+.index > .view-header {
+  padding: 0 36rpx 4rpx 36rpx;
+}
+.index > .view-header image {
+  width: 100%;
+  height: 328rpx;
+  box-shadow: 4px 4px 8px 0px rgba(132, 132, 132, 0.5);
+  border-radius: 18rpx;
+}
+.index > .view-content {
+  border-radius: 24rpx 24rpx 0 0;
+  overflow: hidden;
+  min-height: calc(100% - 328rpx);
+}
+.index > .view-content > .view-shopInfo {
+  padding: 24rpx 32rpx;
+  margin-bottom: 24rpx;
+  background: #fff;
+}
+.index > .view-content > .view-shopInfo > .view-top {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8rpx;
+}
+.index > .view-content > .view-shopInfo > .view-top > .view-left {
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.index > .view-content > .view-shopInfo > .view-top > .view-left > image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 16rpx;
+}
+.index > .view-content > .view-shopInfo > .view-top > .view-left > text {
+  width: 360rpx;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.index > .view-content > .view-shopInfo > .view-top > .view-right {
+  width: 200rpx;
+  text-align: right;
+  font-size: 32rpx;
+  color: #666;
+}
+.index > .view-content > .view-shopInfo > .view-top > .view-right > .bk-icon {
+  margin-left: 4rpx;
+}
+.index > .view-content > .view-shopInfo > .view-scope {
+  margin-bottom: 5px;
+}
+.index > .view-content > .view-shopInfo > .view-siteInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.index > .view-content > .view-shopInfo > .view-siteInfo > .view-left {
+  font-weight: 600;
+}
+.index > .view-content > .view-shopInfo > .view-siteInfo > .view-left text {
+  font-weight: 400;
+  margin-left: 20rpx;
+}
+.index > .view-content > .view-shopInfo > .view-siteInfo > .view-left .view-yyz {
+  margin-bottom: 10rpx;
+}
+.index > .view-content > .view-shopInfo > .view-siteInfo > .view-right {
+  display: flex;
+}
+.index > .view-content > .view-shopInfo > .view-siteInfo > .view-right > view {
+  text-align: center;
+}
+.index > .view-content > .view-shopInfo > .view-siteInfo > .view-right > .view-line {
+  width: 2px;
+  height: 100%;
+  margin: 0 20rpx;
+  background-color: #EEE;
+}
+.index > .view-content > .view-list {
+  background: #fff;
+  padding-bottom: 32rpx;
+}
+.index > .view-content > .view-list > .view-title {
+  padding: 32rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.index > .view-content > .view-list .view-lists .view-item {
+  width: 45%;
+  margin-left: 3.3%;
+  display: inline-block;
+  border-radius: 16rpx;
+  border: 1px solid #eee;
+  background-color: #fff;
+  margin-bottom: 32rpx;
+}
+.index > .view-content > .view-list .view-lists .view-item > .view-top {
+  height: 326rpx;
+  position: relative;
+  border-radius: 16rpx 16rpx 0rpx 0rpx;
+  background: #F2F2F2;
+  color: #fff;
+  padding-top: 113rpx;
+  text-align: center;
+}
+.index > .view-content > .view-list .view-lists .view-item > .view-top > .view-coverImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 326rpx;
+  width: 100%;
+  border-radius: 16rpx 16rpx 0rpx 0rpx;
+}
+.index > .view-content > .view-list .view-lists .view-item > .view-top > .view-def {
+  width: 200rpx;
+  height: 100rpx;
+}
+.index > .view-content > .view-list .view-lists .view-item > .view-top > .view-type {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 6rpx 10rpx;
+  display: inline-block;
+  border-radius: 16rpx 0rpx 16rpx 0rpx;
+}
+.index > .view-content > .view-list .view-lists .view-item > .view-top > .view-typeYes {
+  background: linear-gradient(270deg, #FF4040 0%, #FF2965 100%);
+}
+.index > .view-content > .view-list .view-lists .view-item > .view-top > .view-typeDe {
+  background: linear-gradient(270deg, #FFAF40 0%, #29A2FF 100%);
+}
+.index > .view-content > .view-list .view-lists .view-item > .view-top > .view-contract {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  padding: 2rpx 7rpx;
+  background: rgba(0, 0, 0, 0.5);
+}
+.index > .view-content > .view-list .view-lists .view-item > .view-bottom {
+  padding: 16rpx;
+}
+.index > .view-content > .view-list .view-lists .view-item > .view-bottom > view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.index > .view-content > .view-list .view-lists .view-item > .view-bottom > view:nth-child(1) {
+  margin-bottom: 11rpx;
+}
+.index > .view-content > .view-list .view-lists .view-item > .view-bottom > view > .view-name {
+  font-weight: 600;
+}
+.index > .view-content > .view-list .view-lists .view-item > .view-bottom > view > .view-time {
+  background: #FC4C53;
+  border-radius: 20px;
+  color: #fff;
+  padding: 3rpx 12rpx 2rpx 10rpx;
+  text-align: center;
+  font-size: 24rpx;
+}
+.index > .view-content > .view-list .view-lists .view-item > .view-bottom > view > .view-price {
+  color: #FF3A09;
+  font-size: 26rpx;
+}
+.index > .view-content > .view-list .view-lists .view-item > .view-bottom > view > .view-price text {
+  color: #666;
+  font-size: 20rpx;
+}
+.index > .view-content > .view-list .view-lists .view-item > .view-bottom > view > .view-lastPrice {
+  color: #ccc;
+  text-decoration-line: line-through;
+  font-weight: 400;
+  font-size: 26rpx;
+}

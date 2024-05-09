@@ -1,0 +1,56 @@
+<!-- <scroll-view  scroll-y="{{true}}"  onScrollToLower="scrollToLower"  class="indexPage"> -->
+<view class="index">
+  <view class="view-header">
+    <swiper
+      style="height:430rpx"
+      class="demo-swiper"
+      indicator-dots="{{true}}"
+      autoplay="{{true}}"
+      vertical="{{false}}"
+      interval="{{2000}}"
+      circular="{{true}}"
+      duration="{{1500}}"
+    >
+      <swiper-item a:for="{{shopImgs}}" key="swiper-item-{{index}}">
+        <view class="swiper-item">
+          <image
+            mode="scaleToFill"
+            src="{{ item }}"
+            class="swiper-item-source"
+          />
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="view-content">
+
+    <view class="view-list">
+      <view class="view-title">优惠</view>
+      <view class="view-lists">
+        <view a:for="{{ recordList }}" class="view-item" onTap='cardItemClick' data-item="{{item}}">
+          <view class="view-top">
+            <image a:if="{{item.coverImg}}" class="view-coverImg" src="{{item.coverImg}}"></image>
+            <!-- <image a:else class="view-def" src=""></image> -->
+            <view class="view-type {{item.payLaterMoreUseMoreDiscount == 'YES' ? 'view-typeYes' : 'view-typeDe'}}">{{ item.payLaterMoreUseMoreDiscount == 'YES' ? '1111' : '2222'}}</view>
+          </view>
+
+          <view class="view-bottom">
+            <view>
+              <view class="view-name">{{item.projectName}}</view>
+              <view class="view-time">{{item.period}}期</view>
+            </view>
+            <view>
+              <view class="view-price">{{item.minPayLaterPeriodPrice}}-{{item.maxPayLaterPeriodPrice}}<text>元/月</text> </view>
+              <view class="view-lastPrice">{{item.standPrice}}元/月</view>
+            </view>
+          </view>
+
+          </view>
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+</view>
+<!-- </scroll-view> -->

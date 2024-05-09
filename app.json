@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/vouchers/vouchers"
+  ],
+  "window": {
+    "defaultTitle": "外卖优惠"
+  },
+  "behavior": {
+    "requestReferrerStrategy": "page",
+    "requestReferrerStyle": "full",
+    "requestDefaultEnableCookie": true,
+    "connectSocketDefaultMultiple": true
+  }
+}
